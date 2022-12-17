@@ -1,0 +1,339 @@
+html{
+    background-image: url('./../img/stacked-waves-haikei-body.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header > nav > ul{
+    display: inline-flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    box-shadow: 0 8px 50px -7px black;
+    background-color: rgb(70, 70, 70);
+    width: 100%;
+    padding: 0px;
+    height: 75px;
+    border-radius: 30px;
+    background-image: url('./../img/stacked-peaks-haikei-ul.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header > nav > ul > li{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: #81ff24;
+}
+
+header > nav > ul > li > a.selected{
+    color: #ffa724;
+}
+header > nav > ul > li > a:hover{
+    background-color: #fa726888;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: all 175ms ease;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+div#contact{
+    align-self: center;
+    border: 3px solid rgba(0, 0, 0, 0.37);
+    border-radius: 25px;
+    background-color: #727b863a;
+    overflow: hidden;
+}
+
+table#contact, th.contact-category, td.personal-info{
+    border: 3px solid rgba(0, 0, 0, 0.37);
+    border-collapse: collapse;
+    text-align: center;
+    align-self: center;
+    font-size: 1.7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 900px;
+    height: 100px;
+}
+
+table#contact{
+    border: hidden;
+}
+
+
+div#article{
+    display: inline-flex;
+    width: 100%;
+}
+
+div#article > div{
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 7px;
+    width: 30%;
+    height: 80%;
+}
+
+div#article > div > p{
+    font-size: 1.6em;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #26003f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#image-track{
+    position: relative;
+    display: flex;
+    align-self: center;
+    gap: 2vmin;
+}
+
+div#image-track > img{
+    display: flex;
+    align-self: center;
+    transform: translate(0%, 0%);
+    background-size: cover;
+    border-radius: 20px;
+    height: 700px;
+    width: 550px;
+    scroll-behavior: smooth;
+}
+
+footer{
+    margin-top: auto;
+    padding: 3px;
+}
+
+footer > div#links{
+    position: relative;
+    height: 255px;
+    border-radius: 20px;
+    box-shadow: 0 8px 50px -7px black;
+    color: #fff;
+    padding: 3px;
+    background-image: url('./../img/low-poly-grid-haikei-footer.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer > div#links > a{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    margin-top: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer > div#links > a.link-1{
+    background-image: url(./../img/Facebook.png);
+}
+footer > div#links > a.link-2{
+    background-image: url(./../img/Instagram.png);
+}
+footer > div#links > a.link-3{
+    background-image: url(./../img/Twitter.png);
+}
+
+div#box{
+    position: relative;
+    width: 30%;
+    height: 670px;
+    align-self: center;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+div#box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 670px;
+    background: linear-gradient(0deg, transparent, #9900FF, #9900FF);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+div#box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 670px;
+    background: linear-gradient(0deg, transparent, #9900FF, #9900FF);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+div#box > div#form > h2{
+    color: #C62368;
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.06em;
+    margin: 1.5vh 1.5vh 1vh 1.5vh;
+}
+
+div#box > div#form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 3px;
+    z-index: 10;
+    background: #28292d;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+
+div#box > div#form input{
+    position: relative;
+    height: 55px;
+    width: 100%;
+    padding: 20px 0px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FA7268;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    border-radius: 10px;
+}
+
+div#box > div#form > div.inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+div#box > div#form > div.inputbox > i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #C62368;
+    border-radius: 10px;
+}
+
+div#box > div#form button{
+    margin-top: 3vh;
+    background-color: #3C4857;
+    color: #FA7268;
+    font-size: 2.5em;
+    height: 70px;
+    border-radius: 10px;
+}
+
+div#box > div#form input::placeholder{
+    color: rgb(145, 145, 145);
+}
+div#box > div#form button:hover{
+    transform: scale(1.1);
+}
+
+
+div#cards > div{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+div#cards > div.card-1{
+    background-color: red;
+    top: 50px
+}
+div#cards > div.card-2{
+    background-color: blue;
+    bottom: 115px;
+    left: 35px;
+}
+div#cards > div.card-3{
+    background-color: green;
+    bottom: 275px;
+    left: 70px;
+}   
+
+
+div#container{
+    border: 2px solid rgb(41, 41, 41);
+    box-shadow: 0 8px 65px -7px black;
+    margin: auto;
+    padding: 1rem;
+    width: 559.047px;
+    height: 677px;
+    background: #3A4655;
+    border-radius: 30px;
+}
+
+div#container > div.display-screen > div#display{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 70px;
+    margin-bottom: 5px;
+    height: 150px;
+    width: 100%;
+    color: #727B86;
+    background-color: #343a40;
+    border-radius: 30px;
+    overflow-x: hidden;
+}
+
+div#container button{
+    display: table-cell;
+    height: 100px;
+    width: 136px;
+    font-size: 2rem;
+    color: #fff;
+    background: #425062;
+    border-radius: 30px;
+    border: #3C4857 solid 1px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+div#container button.action{
+    color: #ffbc56;
+}
+div#container button#clear{
+    color: #ff7665;
+}
+div#container button:hover{
+    transform: scale(1.1);
+}
